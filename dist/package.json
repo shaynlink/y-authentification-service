@@ -1,0 +1,33 @@
+{
+    "name": "authentification-service",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc",
+        "start": "node dist/src/index.js",
+        "dev": "pnpm run build && pnpm run start",
+        "dev:watch": "tsc -w & nodemon dist/src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.6.8",
+        "bcrypt": "^5.1.1",
+        "checkeasy": "^1.1.0",
+        "codebase": "github:shaynlink/y-backend-codebase",
+        "dotenv": "^16.4.5",
+        "mongoose": "^8.3.2",
+        "typescript": "^5.4.5",
+        "y-types": "github:shaynlink/y-types"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "^5.0.2",
+        "@types/cors": "^2.8.17",
+        "@types/debug": "^4.1.12",
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.12.7"
+    }
+}
